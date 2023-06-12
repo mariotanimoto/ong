@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  body{
+    background-image: url(/img/backgrounddog.jpg);
+    background-size:auto;
+    padding: 20px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+
+  }
+  header ul li{
+    text-align: left;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1{
+    font-size: 80px;
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .container img{
+    object-fit:cover;
+  }
+  
+  .card {
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    width: 30%;
+    padding: 0.8rem;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .card-titulo {
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .card-descricao {
+    text-align: justify;
+    font-size: 0.8rem;
+    flex-grow: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .card a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    flex-grow: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  @media (max-width: 600px) {
+    * {
+      font-size: 22px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .card {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 801px) {
+  
+    * {
+      font-size: 20px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .card {
+      width: 40%;
+    }
+  }
