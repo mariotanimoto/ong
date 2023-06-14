@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Cards</title>
-  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/toggle.css" />
+
+  <title>Cards</title>
+</head>
+
+<body>
   <header>
     <h1>ONG</h1>
-    <ul>
+    <nav>
+      <ul class="menu">
         <li>Contatos</li>
+        <li><label class="switch">
+            <input type="checkbox" id="botaotema">
+            <span class="slider round"></span>
+          </label></li>
         <li>Doações</li>
         <li>Mais Informações</li>
-    </ul>
-  </header>
-  <body>
-    <div class="container"></div>
+      </ul>
+    </nav>
 
-    <script src="./js/script.js"></script>
-  </body>
+  </header>
+  <main>
+    <div class="container">
+      <script src="./js/script.js"></script>
+    </div>
+</body>
+</main>
+
 </html>

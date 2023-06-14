@@ -43,4 +43,30 @@ const listaPosts = [
   
   window.onload = () => {
     criacaoPosts();
+
+    let cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.addEventListener("mouseover");
+    });
+
   };
+
+  let botaoTema = document.querySelector("#botaotema");
+  console.log(botaoTema);
+  
+  botaoTema.addEventListener("click", () =>{
+    let body = document.querySelector("body");
+    if(botaoTema.checked) {
+      body.classList.add("body-dark");
+    }else{
+      body.classList.remove("body-dark");
+    }
+    
+  });
+
+  inputTest = document.getElementById("inputTeste");
+
+  inputTest.addEventListener("keypress", (tecla) => {
+    alert("Tecla Pressionada:" + tecla.key);
+  });
+

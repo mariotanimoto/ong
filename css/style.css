@@ -4,7 +4,15 @@
     box-sizing: border-box;
     font-size: 18px;
   }
+  .body-dark{
+    transition-duration: 0.5s;
+    background-image: none;
+    background-color:black;
+    background-size:auto;
+    padding: 20px;
+  }
   body{
+    transition-duration: 0.5s;
     background-image: url(/img/backgrounddog.jpg);
     background-size:auto;
     padding: 20px;
@@ -31,6 +39,9 @@
     text-align: center;
     color: blueviolet;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .menu{
+    position: relative;
   }
   .container {
     display: flex;
@@ -86,6 +97,7 @@
     flex-grow: 1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   
   @media (max-width: 600px) {
     * {
