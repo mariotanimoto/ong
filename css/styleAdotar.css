@@ -1,3 +1,13 @@
 .erro{
     background-color: crimson;
 }
+.campo-obrigatorio{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    color: red;
+}
+.campo-obrigatorio img{
+    width: 20px !important;
+}
